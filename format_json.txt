@@ -1,0 +1,40 @@
+{
+    "collection": {
+        "info": {
+            "name": "TT",
+            "description": "TTT",
+            "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+        },
+        "item": [
+            {
+                "name": "TTTT",
+                "id": "82ee981b-e19f-962a-401e-ea34ebfb4848",
+                "event": [
+                    {
+                        "listen": "test",
+                        "script": {
+                            "id": "7d2334fc-a84a-4c3d-b26c-7529afa4c0ae",
+                            "exec": [
+                                "pm.test(\"Status code is 200\", function () {",
+                                "    pm.response.to.have.status(200);",
+                                "});"
+                                ],
+                            "type": "text/javascript"
+                            }
+                        }
+                    ],
+                "request": {
+                    "url": "https://echo.getpostman.com/headers",
+                    "method": "GET",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ]
+                },
+                "response": []
+            }
+        ]
+    }
+}
